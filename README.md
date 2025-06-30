@@ -17,7 +17,7 @@ Atualmente, o repositório inclui:
 ## Tecnologias Utilizadas
 
 * **Java**: A linguagem de programação principal.
-* **Eclipse**: IDE utiliza para desenvolver os exercicios
+* **Eclipse**: IDE utiliza para desenvolver os exercicios.
 
 ## Como Começar
 
