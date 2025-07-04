@@ -1,6 +1,6 @@
 package ClassesEMetodos;
 
-public class ProdutoTeste {
+public class ProdutoTeste2 {
 	public static void main(String[] args) {
 		
 		Produtos p1 = new Produtos("Notebook", 4356.89);

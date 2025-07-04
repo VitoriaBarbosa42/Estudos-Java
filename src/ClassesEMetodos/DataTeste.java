@@ -10,13 +10,13 @@ public class DataTeste {
 			dia1.ano = 2025;
 			
 			
-		ClasseData dia2 = new ClasseData();
-			dia2.dia = 15;
-			dia2.mes = 01;
-			dia2.ano = 2000;
-			
+		ClasseData dia2 = new ClasseData(15, 01, 2000);
+		
+		ClasseData dia3 = new ClasseData();			
 
-			
+			System.out.println(dia1.dataFormatada());
+			System.out.println(dia2.dataFormatada());
+			System.out.println(dia3.dataFormatada());
 		
 	}
 
