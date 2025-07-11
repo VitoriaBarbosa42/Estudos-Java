@@ -2,6 +2,7 @@ package colecoes;
 
 import java.util.ArrayList;
 
+
 public class Lista {
 	
 	public static void main(String[] args) {
@@ -15,7 +16,16 @@ public class Lista {
 		lista.add(new Usuario("Bia"));
 		lista.add(new Usuario("Manu"));
 		
-		System.out.println();
+		System.out.println(lista.get(3)); //Acessar pelo indice
+		
+		lista.remove(1);
+		System.out.println(lista.remove(new Usuario("Manu")));
+		
+		System.out.println("Tem? " + lista.contains(new Usuario("Lia")));
+		
+		for (Usuario u: lista) {
+			System.out.println(u.nome);
+		}
 	}
 
 }
