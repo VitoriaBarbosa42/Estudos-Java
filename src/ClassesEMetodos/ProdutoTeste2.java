@@ -1,4 +1,4 @@
-package ClassesEMetodos;
+package classesEMetodos;
 
 public class ProdutoTeste2 {
 	public static void main(String[] args) {

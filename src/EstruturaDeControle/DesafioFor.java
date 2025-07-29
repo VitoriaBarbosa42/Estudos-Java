@@ -1,4 +1,4 @@
-package EstruturaDeControle;
+package estruturaDeControle;
 
 public class DesafioFor {
 	public static void main(String[] args) {

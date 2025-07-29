@@ -1,4 +1,4 @@
-package DesafioPessoa;
+package desafioPessoa;
 
 public class Pessoa {
 	

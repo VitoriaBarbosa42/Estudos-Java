@@ -1,4 +1,4 @@
-package ArrayECollection;
+package arrayECollection;
 
 public class Foreach {
 	

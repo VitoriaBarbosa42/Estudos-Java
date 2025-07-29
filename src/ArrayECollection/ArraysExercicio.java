@@ -1,4 +1,4 @@
-package ArrayECollection;
+package arrayECollection;
 
 import java.util.Arrays;
 

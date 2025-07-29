@@ -1,4 +1,4 @@
-package ClassesEMetodos;
+package classesEMetodos;
 
 public class Produtos {
 

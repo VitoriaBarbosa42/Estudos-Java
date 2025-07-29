@@ -1,4 +1,4 @@
-package EqualsEHashcode;
+package equalsEHashcode;
 
 public class Usuario {
 	

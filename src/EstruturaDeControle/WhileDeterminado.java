@@ -1,4 +1,4 @@
-package EstruturaDeControle;
+package estruturaDeControle;
 
 public class WhileDeterminado {
 	public static void main(String[] args) {
