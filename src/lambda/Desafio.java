@@ -14,12 +14,9 @@ public class Desafio {
 		
 		UnaryOperator<Double> valorImpostoMunicipal = preco -> preco > 2500 ? preco += (preco * 0.085) : preco;
 		
-		UnaryOperator<Double> frete1 = preco -> preco >= 3000.00 ? preco += 100 : preco;
-		UnaryOperator<Double> frete2 = preco -> preco < 3000.00 ? preco += 50 : preco;
+		UnaryOperator<Double> frete = preco -> preco >= 3000.00 ? preco + 100 : preco + 50;
 		
-		
-		
-		Double resultado = precoComDesconto.andThen(valorImpostoMunicipal).andThen(frete1).andThen(frete2).apply(p.preco, p.desconto);
+		Double resultado = precoComDesconto.andThen(valorImpostoMunicipal).andThen(frete).apply(p.preco, p.desconto);
 		
 		System.out.printf("Valor final do produto: %.2f R$", resultado);
 	}
