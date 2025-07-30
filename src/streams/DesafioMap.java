@@ -35,11 +35,7 @@ public class DesafioMap {
 	.map(Integer::toBinaryString)
 	.map(inverteString)
 	.map(convercaoParaInteiro)
-	.forEach(println);		
-	
-	
-	
-	
+	.forEach(println);			
 }
 }
 
