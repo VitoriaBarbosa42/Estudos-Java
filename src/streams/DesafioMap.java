@@ -16,20 +16,26 @@ public class DesafioMap {
 	
 //	UnaryOperator<Integer> convercaoParaBinario = n -> Integer.toBinaryString(n);
 	
-	Function<Integer, String> convercaoParaBinario = n -> n.toBinaryString(n);
 	Function<String, String> inverteString = 
-			n -> {StringBuilder x = new StringBuilder(n);
-			n = x.reverse().toString();
-			return n;
-			};
+			n -> new StringBuilder(n).reverse().toString();
 	Function<String, Integer> convercaoParaInteiro =  n -> Integer.parseInt(n, 2);
 	
 	System.out.println("Convertendo os numeros Inteiros para Binario");		
-	nums.stream().map(convercaoParaBinario).forEach(println);		
+	nums.stream()
+	.map(Integer::toBinaryString)
+	.forEach(println);		
+	
 	System.out.println("Invertendo os números");		
-	nums.stream().map(convercaoParaBinario).map(inverteString).forEach(println);		
+	nums.stream().map(Integer::toBinaryString)
+	.map(inverteString)
+	.forEach(println);	
+	
 	System.out.println("Convertendo os numeros binarios para inteiro");		
-	nums.stream().map(convercaoParaBinario).map(inverteString).map(convercaoParaInteiro).forEach(println);		
+	nums.stream()
+	.map(Integer::toBinaryString)
+	.map(inverteString)
+	.map(convercaoParaInteiro)
+	.forEach(println);		
 	
 	
 	
