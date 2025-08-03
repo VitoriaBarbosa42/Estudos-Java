@@ -1,0 +1,36 @@
+package generics;
+
+import java.util.LinkedHashSet;
+import java.util.Optional;
+import java.util.Set;
+
+
+public class Pares<C extends Number, V> {
+	
+	private final Set<Par<C, V>> itens = new LinkedHashSet<>();
+	
+	public void adicionar(C chave, V valor) {
+		if(chave == null) return;
+		
+		Par<C, V> novoPar = new Par<C, V> (chave, valor);
+		
+		if(itens.contains(novoPar)) {
+			itens.remove(novoPar);
+		}
+		
+		itens.add(novoPar);
+	}
+	
+	//A classe Optional em Java é um contêiner que pode ou não conter um valor 
+//	não nulo. Ela serve para evitar exceções do tipo NullPointerException ao lidar 
+//	com valores que podem ser nulos.
+	public V getValor(C chave) {
+		if(chave == null) return null;
+		
+		Optional<Par<C, V>> parOpicional = itens.stream()
+				.filter(par -> chave.equals(par.getChave()))
+				.findFirst();
+		return parOpicional.isPresent() ? parOpicional.get().getValor() : null;
+	}
+
+}
